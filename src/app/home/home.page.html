@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculator Sederhana
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,20 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Masukkan data</p><br>
+    Angka Pertama: 
+    <input type ="number" [(ngModel)]="Angka1"/>
+    Angka Kedua  : 
+    <input type ="number" [(ngModel)]="Angka2"/>
+    <br>
+    
+    <ion-button (click)="btambah()">+</ion-button>
+    <ion-button (click)="bkurang()" color ="tertiary">-</ion-button>
+    <ion-button (click)="bkali()" color ="secondary">*</ion-button>
+    <ion-button (click)="bbagi()" >/</ion-button>
+    <br>
+    Hasil Kalkulasi : 
+    {{Hasil}}
+    
   </div>
 </ion-content>

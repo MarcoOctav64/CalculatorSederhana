@@ -8,5 +8,26 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  Angka1 : number
+  Angka2 : number
+  Hasil : number
+  btambah()
+  {
+    this.Hasil = this.Angka1 + this.Angka2
+  }
 
+  bkurang()
+  {
+    this.Hasil = this.Angka1 - this.Angka2
+  }
+
+  bkali()
+  {
+    this.Hasil = this.Angka1 * this.Angka2
+  }
+
+  bbagi()
+  {
+    this.Hasil = this.Angka1 / this.Angka2
+  }
 }
